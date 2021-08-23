@@ -1,39 +1,66 @@
 {
   "version": 2.0,
   "questions": [
+    
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. What ion moves rapidly into the neuron during an action potential ? ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Potassium",
+        "b": "Sodium",
+        "c": "Chloride",
+        "d": "Calcium"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+  
+
+
+    {
+      "question": "2. What equation is used to determine equilibrium potential for an ion ? ",
+      "answers": {
+        "a": "Goldman-Hodgkin-Katz flux equation",
+        "b": "Nernst equation",
+        "c": "Hodgkin–Huxley equation",
+        "d": "Cable equation"
+       
       },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+
+
+    {
+      "question": "3. Voltage-gated sodium channels play an important role in ",
+      "answers": {
+        "a": "Action potential",
+        "b": "Resting potential",
+        "c": "Both"
+      },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
+
+
+
+
     {
-      "question": "This is a Sample Question 2?",
+      "question": "4. Channels that respond to potential changes are called what ?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Voltage gated ion channels",
+        "b": "Resting ion channels",
+        "c": "Both"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
+      
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
+
+
+
   ]
 }
