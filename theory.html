@@ -1,0 +1,475 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'AU',
+        'phase': 'Testing',
+        'expName': 'MODELING THE SODIUM ION CHANNEL AND ITS EFFECTS ON NEURAL SIGNALING',
+        'expShortName': 'sodium-ion-channel'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="sodium-ion-channel">
+    	<meta name="developer-institute" content="AU">
+    	<meta name="learning-unit" content="MODELING THE SODIUM ION CHANNEL AND ITS EFFECTS ON NEURAL SIGNALING">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center">
+            <ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in">HOME</a>
+              </li>
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in/participating-institutes">PARTNERS</a>
+              </li>
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in/contact-us">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+		  <div class="row py-4 px-4 breadcrumbs">
+		  	<div class="title is-4 tools">Tools</div>
+		  	<span class="mx-2">
+		  		<i aria-hidden="true" class="fa fa-angle-right"></i>
+		  	</span>
+		  	<a href="performance-report.html" target="_blank">
+		  		<button class="v-button">Performance Tool</button>
+		  	</a>
+		  </div>
+	  </div>
+          <div class="flex-column">
+            <div id="plugin-bug-report"></div>
+            <div id="plugin-rating"></div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="modeling-the-sodium-ion-channel-and-its-effects-on-neural-signaling">Modeling the sodium ion channel and its effects on neural signaling</h2>
+          
+            </div>
+              <p>Propagation of signals through neuronal cells depend upon the rapid changes in potential difference across cell membranes. Sensory nerve cells (like: photo-receptors) are very sensitive to a very small stimuli. The signal propagation and processing in the brain mainly depends on the ability of sensory neurons response to a small stimuli, which effect the rapid change in the potential across the membranes. These rapid changes in membrane potential are mediated by ion channels in the cell. Ion channels are integral membrane proteins found in all the cells of the body. Different types of ion channels are found in same and different cells in different parts of the cell. These functional elements define the specificity in signaling.</p>
+          <p>Malfunctioning of these functional elements causes a wide variety of neurological diseases and diseases like cystic fibrosis and cardiac arrhythmia. Ion channels are studied in detail because they are the site of action of drugs, toxins and poisons. These facts define the crucial role of ion channels in physiology and pathology of the nervous system.</p>
+          <p><strong>Ion channels</strong></p>
+          <p>Ion channels are macromolecules consisting of 1800-4000 amino acid residues arranged in one or several polypeptide chains with 100’s of sugar residues covalently linked as oligosaccharide chains to amino acids, which is faced out to the extracellular medium. Regulation of ion channels as gating mechanism involves the opening and closing of ion channels. These gating of ion channel requires the conformational change of the pore, thus conformational changes will define a gate to open and/ close. The probability of opening/closing of the gate is controlled by sensors. These sensors are very sensitive to any difference in the membrane potential.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s1.jpg" title=""></center> 
+          
+          <p>Fig 1: Hypothetical representation of voltage gated ion channel is placed in the lipid bilayer of the membrane.</p>
+          <p><strong>Importance of Ion channels in signaling</strong></p>
+          <p>Ion channels are considered to be the functional elements of signal propagation in neurons. They are macromolecular pores found in cell membranes and are also called as an excitable elements in the membrane of the excitable cells. They have an important role in signaling in the nervous system. The main three important properties of ion channels, responsible for signaling in nervous system are 1) conduct ions, 2) specificity to particular ion, 3) opening and closing of gates in response to electrical, mechanical, or chemical signals (see Fig 1). These three properties combine to contribute the process of transportation of ions across the membrane, which is at the rate up to 100 million ions per second through a single channel. These rapid movements of charge across the membrane generates rapid changes in membrane potential that is required for signaling.</p>
+          <p>Apart from their ability to conduct ions at a very high rate, ion channels are very selective. Each type of channel allows to pass only one or a few type of ions. When the cell is at rest the membrane potential at this state of the cell is determined by channels that are selectively permeable to K+ ions very little quantity of Na+ ions.</p>
+          <p>Ion channels are classified in to two channels i.e. gated channels and non-gated channels. The gated channels are gated or regulated in response to various stimuli. The voltage-gated channels are regulated by changes in voltage ligand-gated channels by chemical transmitters, and mechanically gated channels by pressure or stretch. The non-gated channels are mainly responsible to keep membrane potential at rest. Non-gated channels are also called resting channels (see exercise-1 for more details).</p>
+          <p><strong>Classical neurophysiology and Ion channels</strong></p>
+          <p>In 1937, Hermann’s local circuit theory of propagation inspired Hodgkin to study depolarization of membranes and action potentials in frog. He observed that, depolarization of Action potential (AP) spreads passively from an excited region of membrane to nearby unexcited region as stimuli for propagation. From these observations he stated that “AP propagates electrically” (Hodgkin 1937 a,b). Around the same period Cole and Curtis proposed an additional concept to the mechanism of Ap i.e. membrane conductance increase begins only after the membrane potential has been raised to many milli volts from Resting potential (RP). Many physiologists were attracted to these two classical observations from that time onwards.</p>
+          <p> First time Hodgkin, Huxley (1939, 1945) and Curtix, Cole (1940, 1942) measured a full AP of an axon using intracellular micropipette. They had observed a transient drop of membrane potential at 0mV and had assumed that the membrane may be permeable to all ions. The speed of new discoveries in classical neuro-physiology was disturbed by Second World War, and afterwards in 1946, in Cambridge found, the membrane become selectively permeable to Na+ ions and found an electro-motive force in membrane. The newly found membrane electro motive force would be the sodium equilibrium potential (ENa). The inward rushing Na+ ions carries the inward current of the active membrane, thereby depolarizing it from RP to near ENa.</p>
+          <p>In 1949, Hodgkin and katz tested their Na hypothesis by replacing NaCl in sea water with Choline chloride. They observed that the AP raises less in amplitude and propagated less rapidly and less over shoots in low Na+ in external medium. They continued their experiments using 24Na tracers to prove that the excitation is accomplished by extracellular Na+ influx of several pico moles/centimeter/impulse.  From their results, the sodium theory was confirmed. The initial experiments of (Curtis and Cole 1942, Hodgkin and kartz, 1949) with intracellular electrode showed that at high K+ ion concentration membrane potential closely follows Ek.  But at normal very low concentration, the membrane potential was less negative than Ek. Mathematical equations for the resting potential by Goldmann could predict the same behavior of K+ ion equilibrium potential as observed in experiments, at initially selective to K+ but slightly permeable to other ions. (Goldmann , 1943 ; Hodgkin and kartz, 1949).</p>
+          <p><strong>Measuring Ionic currents</strong></p>
+          <p>Classical neurophysiology studies of AP leads to the important ionic hypothesis. The ideas and concepts proved early days gave a strong basis for the development of experimental procedure called  as Voltage Clamp technique by (Marmount, 1949; Cole, 1949; Hodgkin, Huxely and Kartz 1949,1952). The Voltage clamp has had been used as the best biophysical technique for the last few decades. In voltage clamp experiments, control the voltage across the membrane, most of the electrophysiological studies were based on injection of current as stimuli and recording the membrane voltage. The applied current flows locally, across the membrane both as ionic and capacitive current. But in voltage clamp reverses the process, physiologist apply voltage and record the current (see chapter * for further study).</p>
+          <p>In a standard voltage clamp experiment, the MP is holds for few milli second to depolarize level and then holds back to previous potential. This process is called as step the MP. This change in MP will produce a charge difference between the inside and outside of the membrane, which will further result in ionic movement across the membrane, till the voltage gets hold back.Total membrane current Im would be the sum of Ii and Ic.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s2.JPG" title=""></center>
+           
+          &nbsp;
+          <center><img src="images/s3.JPG" title=""></center>
+          
+          <p>  Eq (1 and 2)</p>
+          <p>Where Ii is the current carried by ions across the membrane, Ic is the capcitative current, dE/dt is the change in membrane potential, Cm is the membrane capacitance. Step changes in the membrane potential will measure only Ionic current, because of transition from one level to another, thus resulting in the change in membrane potential to zero.</p>
+          <p>The ionic current flowing across the membrane is measured quantitatively first time using the  voltage clamp technique. Followed by two main observations put forward by Hodgkin and Huxley was that, 1) the currents carried by Na+ ions should be inward at potentials negative to equilibrium potential ENa and out ward at potential positive to ENa. The same logic was applied to other ions.2) particular ion was added or removed from the medium resulted in some signals were abolished. In 1952 Hodgkin and Huxley formulated an Independent relation that the probability of an ion cross the membrane does not depend upon the other ions.</p>
+          <p><strong>Sodium channels</strong></p>
+          <p>All Na+ channels across animal kingdom show similar functionalities, but non-physiological properties do differ in their classification, for example different antibodies can distinguish channels on the central axon. All excitable cells do not have Na+ channels, but the cells which have those channels are distributed throughout the cell body. Mainly in axons, neuronal cell body, vertebrate skeletal muscle, cardiac muscle and many endocrine gland.  Axonal sodium channel has a primary function, to generate rapid regenerative upstroke to an AP. In other membranes  these Na+ channels contribute to sub-threshold potentials, which desired to a spike or EPSP (Excitatory Post Synaptic Potentials). According to Hille, sodium channels have multiple subtypes, from general classification in animals, six different channels in rodents, 4 different channels in brain, one in skeletal muscle, one in heart. Even though sodium channels are in different sub types, but their functionality almost similar. Sodium channels shows less functional diversification than potassium channels.</p>
+          <p>Pharmacological studies help to identify different types of Na+ channels, by the application of toxins like TTX (tetrodotoxin). One general classification of Na channels include 1) Na channels those are sensitive to TTX and 2) Na channels those are insensitive/less sensitive to TTX. For example Na+ channels of vertebrate skeletal muscle less sensitive to TTX. But Na+ channels of squid axon are sensitive to TTX. Puffer fish produces TTX for self-defense and they are highly resistant to toxins. In 1988, Linas reported that TTX-sensitive Na channels have significant role in spike initiation.</p>
+          <p><strong>Hodgkin and Huxley Na channels</strong></p>
+          <p>The main goal of Hodgkin and Huxley was to study the ionic flux and permeability in terms of molecular mechanism. They came up with a mathematical model of the squid axon. The model included not only the practical calculation of electrical potential but also the gating mechanisms. Hodgkin and Huxley noted that, opening of K+ channel and Na+ channels are controlled by several indepent bound particles. Suppose, there are four identical particles, each with probability being in the correct position to set identical particles is x, then probability that all particles at correct place is x4.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s4.JPG" title=""></center>
+          Figure 2. Sodium current (INa) simulated using the simulator
+          
+          
+          <p>Since, Na+ channels have two kinds of gating particles i.e.  activation and inactivation , Hodgkin and Huxley called them as m and h particles to control activation and inactivation of channel. The probability that they all are in permissive position is given by m3h.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s5.JPG" title=""></center>
+           Eq (3)
+          
+          <p>gNa   is the maximum conductance of the sodium channel.</p>
+          <p><strong>Ionic conductance describe the permeability changes</strong></p>
+          <p>Next goal of Hodgkin and Huxley was to find the membrane ionic permeabilities. They also performed a set of experiments in the axonal membrane by stepping the potential down and studying the conductance using voltage clamp techniques, measured and plotted I (peak value of current Na+/K+) – V(membrane voltage) relation. Current voltage relationships of a squid axon followed approximately linear curve, as in ohm’s law.
+          The ionic conductance of sodium channel was given by the equation:</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s6.JPG" title=""></center>
+          Eq(4)
+           
+          
+          <p>The measure of gNa will give how many sodium channels open. During the step of depolarization, gNa rises rapidly with short delay (called fast sodium activation) the depolarizing phase in anatomy of AP (see excercise 2 for detailed study) and fall to low value (called fast sodium inactivation) the repolarizing phase in anatomy of AP  (see Fig 3 for simulated result).</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s7.JPG" title=""></center>
+          
+          <p>Figure 3. Conductance of sodium channel (gNa) simulated using the simulator.</p>
+          <p>At rest the value of m is high and h is low. During depolarization m increases rapidly and h falls slowly (see Fig 4). m3h will fall in to low.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s8.JPG" title=""></center>
+          
+          <p>Figure 4. m and h current are simulated using the simulator</p>
+          <p>If the initial value of m,h is known, then the subsequent values can be calculated as fist derivative of gating coefficients derived.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s9.JPG" title=""></center>
+           
+          &nbsp;
+          <center><img src="images/s10.JPG" title=""></center>
+                             
+          
+          <p>Eq(5 and 6)</p>
+          <p>Where  α,β are the gating coefficients of the channel.</p>
+          <p>&nbsp;</p>
+          <center><img src="images/s11.JPG" title=""></center>
+           Eq(7)
+           
+          &nbsp;
+          <center><img src="images/s12.JPG" title=""></center>
+          Eq(8)
+           
+          &nbsp;
+          <center><img src="images/s13.JPG" title=""></center>
+          Eq(9)
+           
+          &nbsp;
+          <center><img src="images/s14.JPG" title=""></center>
+          Eq(10)
+          
+          <p>s,th,c,v are the variable represent slope, threshold, magnitude and membrane voltage respectively. HH model for squid axon describes the ionic current across the membrane in terms of 3-component.</p>
+          <p>&nbsp;
+          center&gt;<img src="images/s15.jpg" title="">
+             Eq(11)</p>
+          <p>gL is the fixed background/leaky conductance at maximum.</p>
+          <p>The invention of the new technique called as voltage clamp could take the classical neurophysiological research to a new level. Hodgkin and Huxley used voltage clamp in their further studies. Hodgkin and Huxley made an assumption that the properties of electrically excitable cells are similar to that of a squid axon. But those assumptions were proved wrong by the discovery of new K+ channels, found in frog mussels (Katz , 1949). The investigation to find new channels is continuing still today. The classical neurophysiology studies proved that large axons conduct impulse/action potential at high rate than that considerably small ones. These differences in propagation of signal do not depend on ion channels. But those properties can only be understood form the geometry of neuronal membrane (i.e. from cable theory).</p>
+          
+          </div>
+        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fa fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fa fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fa fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fa fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+
+      <script src="./assets/js/toggleSidebar.js"></script>
+      
+  
+
+<script type="module" src="https://vjspranav.github.io/vleads-bug-report/client/app.js"></script></body></html>
